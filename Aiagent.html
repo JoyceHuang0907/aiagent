@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agent 天使智能客服</title>
+    <style>
+        /* 容器：確保自適應寬度 */
+        .container {
+            position: relative;
+            width: 100vw;  /* 讓背景圖鋪滿螢幕 */
+            max-width: 2400px; /* 限制最大寬度 */
+            margin: 0 auto;
+        }
+
+        /* 背景圖片：自適應縮放 */
+        .background-img {
+            width: 100%;
+            display: block;
+        }
+
+         /* GIF 疊加 */
+        .overlay-gif {
+            position: absolute;
+            width: 24%;  /* GIF 大小可調整 */
+            top: calc(1600 / 14000 * 100%);
+            left: calc(1958 / 2400 * 100%);
+            transform: translate(-50%, -50%);
+            border-radius: 15px; /* 讓四角變圓，數值可調整 */
+        }
+
+        /* 確保網頁可以上下滾動 */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://raw.githubusercontent.com/JoyceHuang0907/aiagent/main/AI%20Angel%20Agent.png" class="background-img" alt="AI Angel Agent">
+        <!-- GIF 疊加 -->
+        <img src="https://file.talk.tw/Editor/686/Media/MyMedia43520250225161621.gif" class="overlay-gif" alt="動畫">
+    </div>
+</body>
+</html>
